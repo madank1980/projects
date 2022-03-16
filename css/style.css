@@ -1,0 +1,42 @@
+.bluebg {
+  background: #554c86;
+  padding: 94px 0;
+  text-align: center;
+}
+.bluebg .catergoryicons {
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bluebg .categorytxt {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.bluebg .gap {
+  height: 60px;
+}
+.greenbg {
+  background: #39d47a;
+  padding: 100px 40px;
+}
+.greenbg h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+.greenbg p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.greenbg .common-button a {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 90px;
+  color: #fff;
+  padding: 15px 20px;
+}
