@@ -1,5 +1,26 @@
 @import "veriable.less";
 
+h1{
+    color: @text-color-primary;
+    font-size: @font-size * 5;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+h2{
+    font-size: @font-size * 5;
+    color:darken(@gray-color, 100%);
+    margin-bottom: 10px;
+    font-weight: 700; 
+}
+
+.gap {
+    height: 60px;
+}
+
+.border{border:1px solid #333;}
+
+
 
 
 .bluebg {
@@ -20,10 +41,6 @@
     }
 
 
-.gap {
-    height: 60px;
-}
-
 }
 
 
@@ -31,13 +48,7 @@
     background: @color-secondary;
     padding: 100px 40px;
 
-    h1{
-        color: @text-color-primary;
-        font-size: @font-size * 5;
-        font-weight: 900;
-        margin-bottom: 40px;
-    }
-
+   
     p{
         color: @text-color-primary; 
         font-size: 14px;
@@ -54,4 +65,85 @@
 }
 
 
+    section{padding:70px 0;}
+    .prods{
+        background-color:lighten(@bgcolor, 20%);
+    }
+    .heading {padding-bottom:@gap+5;}
 
+    .product {
+        background: @text-color-primary;
+        border-radius: 10px;
+
+        &-img img{
+             -webkit-border-top-left-radius: 10px;
+             -webkit-border-top-right-radius: 10px;
+             -moz-border-radius-topleft: 10px;
+             -moz-border-radius-topright: 10px;
+             border-top-left-radius: 10px;
+             border-top-right-radius: 10px;
+        }
+
+        &-details{
+            padding: @gap;
+        }
+        &-top{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: @gap;
+
+        }
+
+        &-left h6{
+            font-size: @font-size + 6px;
+            font-weight: 700;
+        }
+        &-price{
+            font-size: @font-size + @font-size;
+            color:darken(@colorblue, 10%); 
+            font-weight: 700;
+        }
+
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+
+        li{
+            background:lighten(@gray-color, 70%); 
+            color:darken(@gray-color, 10%); 
+            padding: 7px 12px;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+
+        .product-location{
+            border-top: 1px solid #efefef;
+            padding-top: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    
+        .product-btn{
+            background:darken(@colorblue, 10%); 
+            color:lighten(@gray-color, 100%); 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            border: 1px solid transparent;
+
+            &:hover{
+                color:darken(@colorblue, 10%); 
+                background:lighten(@gray-color, 100%);
+            .border;  
+            }
+
+        }
+
+        
+    }
